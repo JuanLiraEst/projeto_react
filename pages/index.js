@@ -85,10 +85,10 @@ export default function PaginaInicial() {
                 sm: 'row',
               },
               width: '100%', maxWidth: '700px',
-              borderRadius: '5px', padding: '32px', margin: '16px',
+              borderRadius: '10px', padding: '32px', margin: '16px',
               boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
               backgroundColor: appConfig.theme.colors.neutrals[700],
-              opacity: '0.9',
+
             }}
           >
             {/* Formulário */}
@@ -141,8 +141,9 @@ export default function PaginaInicial() {
                 maxWidth: '200px',
                 padding: '16px',
                 backgroundColor: appConfig.theme.colors.neutrals[800],
-                border: '5px solid',
-                borderColor: appConfig.theme.colors.neutrals[999],
+                opacity:'1',
+                border: '1px solid',
+                borderColor:'white',
                 borderRadius: '10px',
                 flex: 1,
                 minHeight: '240px',
