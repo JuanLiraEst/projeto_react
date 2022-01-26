@@ -39,7 +39,7 @@ function Titulo(props) { //criando uma tag, tem q ser em maiúscula
             <h1>{props.children}</h1>            
             <style jsx>{`
             h1 {
-                color: red;
+                color: white;
             }
             `}</style>
         </>
@@ -88,6 +88,7 @@ export default function PaginaInicial() {
               borderRadius: '5px', padding: '32px', margin: '16px',
               boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
               backgroundColor: appConfig.theme.colors.neutrals[700],
+              opacity: '0.9',
             }}
           >
             {/* Formulário */}
@@ -98,7 +99,7 @@ export default function PaginaInicial() {
                 width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
               }}
             >
-              <Titulo tag="h2">Boas vindas de volta!</Titulo>
+              <Titulo tag="h2">Olá, Peter!</Titulo>
               <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
                 {appConfig.name}
               </Text>
@@ -111,6 +112,7 @@ export default function PaginaInicial() {
                     mainColor: appConfig.theme.colors.neutrals[900],
                     mainColorHighlight: appConfig.theme.colors.primary[500],
                     backgroundColor: appConfig.theme.colors.neutrals[800],
+                    
                   },
                 }}
               />
@@ -124,6 +126,7 @@ export default function PaginaInicial() {
                   mainColorLight: appConfig.theme.colors.primary[400],
                   mainColorStrong: appConfig.theme.colors.primary[600],
                 }}
+
               />
             </Box>
             {/* Formulário */}
@@ -138,11 +141,12 @@ export default function PaginaInicial() {
                 maxWidth: '200px',
                 padding: '16px',
                 backgroundColor: appConfig.theme.colors.neutrals[800],
-                border: '1px solid',
+                border: '5px solid',
                 borderColor: appConfig.theme.colors.neutrals[999],
                 borderRadius: '10px',
                 flex: 1,
                 minHeight: '240px',
+
               }}
             >
               <Image
